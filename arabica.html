@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<header>
+    <div class="headerGrid-Container1">
+        <div class="headerGrid1">
+            <a href="index.html"><img class="logo" src="pngtree-minimalist-coffee-cup-logo-style-png-image_15968897.png">
+            </a>
+        </div>
+        <div class="headerGrid2">
+            MOTHER BEAN
+        </div>
+        <div class="headerGrid3">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="store.html">Store</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body >
+    <div class="bodyGrid-Container1">
+        <div class="fullColumn">
+          
+        </div>
+        <div class="spacer1">
+
+        </div>
+        <div class="productPgImg">
+            <img class="productImg1" src="arabica.jpg">
+        </div>
+        <div class="productName">
+            <h3>Arabica</h3>
+        </div>
+        <div class="namePrice">
+            <h3>€12.99</h3>
+        </div>
+        <button class="productCart" type="button"><H3>ADD TO CART</H3></button>
+        <div class="productInfo">
+            <p>What is Lorem Ipsum?</p>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+            <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+<footer>
+    &copy;  CIFET 2024
+</footer>
+</body>
+</html>

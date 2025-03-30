@@ -1,0 +1,307 @@
+html, body {
+  height: 100%;
+}
+
+p{
+  font-size: larger;
+  font-weight: bold;
+  margin: 2%;
+  text-align: left;
+}
+
+
+/* header CSS */
+header {
+  background-color: #6b755c;
+  padding: 20px;
+  align-items: center;
+}
+
+.headerGrid-Container1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  height: 10%;
+}
+
+.headerGrid1{
+  float:left;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.logo {
+  float:left;
+  width: 50%;
+}
+
+.headerGrid2{
+  text-align: center;
+  grid-column: span 8;
+  grid-row: span 1;
+  font-size: 85px;
+  color: #C9B79C;
+}
+
+.headerGrid3{
+  float:right;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+/* nav panel CSS */
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  height: 250px;
+  top: 0;
+  right: 0;
+  background-color: #C9B79C;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  float:right;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #C9B79C ;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color:#F1E0C5;
+}
+
+/* body CSS */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: url("b59dfe88941e08dbcdd872176d3d0210.jpg");
+  height:90%;
+  font-family: Copperplate, Papyrus, fantasy;
+  color: #71816D;
+}
+
+.bodyGrid-Container1{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+  height: 80%;
+  gap: 5px; 
+}
+
+/* grid CSS to help Provide structure */
+.fullColumn{
+  grid-column: span 12;
+}
+
+.halfColumn{
+ grid-column: span 6;
+}
+
+.spacer1{
+  grid-column: span 1;
+}
+
+.spacer2{
+  grid-column: span 2;
+}
+
+.spacer3{
+  grid-column: span 3;
+}
+
+.spacer4{
+  grid-column: span 4;
+}
+
+.spacer5{
+  grid-column: span 5;
+}
+
+/* home CSS */
+.homeContent{
+  grid-column: span 6;
+  grid-row: span 5;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.homeTitle{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+/* about CSS */
+.aboutTitle{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.aboutContent1{
+  grid-column: span 6;
+  grid-row: span 5;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.aboutContent2{
+  grid-column: span 2;
+  grid-row: span 4;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.aboutImg{
+  max-width: 100%;
+}
+
+/* contact CSS */
+.contactTitle{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+  color: #6b755c;
+}
+
+.usrDetails{
+  grid-column: span 4;
+}
+
+.usrDetails form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+.usrDetails input, .userMsg textarea {
+  width: 100%; 
+  padding: 10px;
+  border: 2px solid #C9B79C;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.userMsg{
+  grid-column: span 4;
+}
+
+.submitBtn{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.submitBtn:hover {
+  background-color:#F1E0C5;
+}
+
+/* store page CSS */
+.product{
+  grid-column: span 2;
+  grid-row: span 3;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.productImg{
+  max-width: 60%;
+}
+
+.namePrice{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  color: #6b755c;
+}
+
+a:link, :visited {
+  text-decoration: none;
+}
+
+a:hover{
+  color: #342A21;
+}
+
+/* product page CSS */
+.productPgImg{
+  text-align: center;
+  grid-column: span 3;
+  grid-row: span 5;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+.productImg1{
+  max-width: 90%;
+}
+
+.productName,.productCart{
+  text-align: center;
+  grid-column: span 2;
+  background-color: white;
+  border: 4px solid #C9B79C;
+  color: #6b755c;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.productCart:hover {
+  background-color:#F1E0C5;
+}
+
+.productInfo{
+  text-align: left;
+  grid-column: span 6;
+  grid-row: span 4;
+  background-color: white;
+  border: 4px solid #C9B79C;
+}
+
+/* footer CSS */
+footer{
+    text-align: center;
+background-color: #342A21;
+-webkit-text-fill-color: #d9d9d9;
+padding: 15px;
+height: 10%;
+}
+
+

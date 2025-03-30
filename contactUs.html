@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<header>
+    <div class="headerGrid-Container1">
+        <div class="headerGrid1">
+            <a href="index.html"><img class="logo" src="pngtree-minimalist-coffee-cup-logo-style-png-image_15968897.png">
+            </a>
+        </div>
+        <div class="headerGrid2">
+            MOTHER BEAN
+        </div>
+        <div class="headerGrid3">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contactUs.html">Contact Us</a>
+                <a href="store.html">Store</a>
+            </div>
+        </div>
+    </div>
+</header>
+<body >
+    <div class="bodyGrid-Container1">
+        <div class="fullColumn">
+          
+        </div>
+
+        <div class="spacer5">
+
+        </div>
+        <div class="contactTitle">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="spacer5">
+
+        </div>
+        <div class="spacer4">
+
+        </div>
+        <div class="usrDetails">
+            <form action="/action_page.php">
+                <input type="text" id="usrName" name="usrName" placeholder="Enter your name">
+                <input type="text" id="usrEmail" name="usrEmail" placeholder="Enter your email">
+              </form>
+        </div>
+        <div class="spacer4">
+
+        </div>
+        <div class="spacer4">
+
+        </div>
+        <div class="userMsg">
+            <form action="/action_page.php">
+                <textarea id="usrMessage" name="usrMessage" rows="3" placeholder="Type your message here..."></textarea>
+              </form>
+        </div>
+        <div class="spacer5">
+
+        </div>
+        <button class="submitBtn" type="button"><H3>SUBMIT</H3></button>
+    </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
+<footer>
+    &copy;  CIFET 2024
+</footer>
+</body>
+</html>
